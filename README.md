@@ -1,23 +1,19 @@
 # ✈️ Aviation Sentiment & Behavioral Classifier
 
-## 🧠 Project Overview
-Standard sentiment analysis often fails to capture the *cause* of customer frustration. In the aviation industry, a "negative" review could be due to a safety delay (acceptable) or rude staff (unacceptable).
-
-This project utilises **Deep Learning (LSTM)** to go beyond simple polarity, classifying passenger feedback into actionable categories to inform service training and operational improvements.
+## 📌 Project Overview
+In the aviation industry, speed and interpretability are key. This project utilizes a **Supervised Machine Learning pipeline** to classify passenger feedback into actionable categories, allowing airlines to distinguish between "operational delays" and "service quality" issues.
 
 ## 🛠️ Technical Architecture
-* **Model:** Long Short-Term Memory (LSTM) Neural Network.
-* **Embeddings:** Word2Vec (to understand context, e.g., "gate" implies location).
-* **Preprocessing:** NLTK for tokenization and stop-word removal.
-* **Libraries:** TensorFlow/Keras, Pandas, Scikit-learn.
+* **Algorithm:** Logistic Regression (Selected for high interpretability and speed).
+* **Feature Extraction:** CountVectorization (Bag-of-Words) analysis.
+* **Processing:** NLTK for text cleaning, tokenization, and stop-word removal.
+* **Validation:** 80/20 Train-Test split with Confusion Matrix evaluation.
 
-## 📊 Key Results
-* **Accuracy:** Achieved **80% accuracy** on unseen test data (14,000+ records).
-* **Business Impact:** Identified that 40% of negative sentiment was driven by "Information Clarity" rather than actual flight delays, suggesting a need for better communication protocols.
+## 📊 Business Insights
+* **Efficiency:** The model processes 14,000+ records in seconds, enabling real-time feedback monitoring.
+* **Accuracy:** Achieved **~80% accuracy**, providing a reliable baseline for automated customer service ticketing.
 
-## 🚀 Usage
-The notebook walks through the full pipeline:
-1.  **Data Cleaning:** Handling unstructured text.
-2.  **Vectorization:** Converting text to numeric sequences.
-3.  **Training:** Model training with validation splits.
-4.  **Evaluation:** Confusion Matrix and Loss/Accuracy plots.
+## 🚀 How to Run
+1.  Load the `Airline-Sentiment-2-w-AA.csv` dataset.
+2.  Run the `Aviation_Sentiment_Model.ipynb` notebook.
+3.  View the generated Word Clouds and Sentiment Distribution charts.
