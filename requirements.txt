@@ -1,0 +1,11 @@
+# Aviation Sentiment Classifier — dependencies
+pandas>=1.5
+numpy>=1.23
+scikit-learn>=1.2
+gensim>=4.3
+nltk>=3.8
+emoji>=2.0
+matplotlib>=3.6
+seaborn>=0.12
+joblib>=1.2
+jupyter>=1.0
